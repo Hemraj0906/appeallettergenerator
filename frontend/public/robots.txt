@@ -1,0 +1,15 @@
+# *
+User-agent: *
+Allow: /
+
+# *
+User-agent: *
+Disallow: /api/
+Disallow: /_next/
+
+# Host
+Host: https://appeallettergenerator.com
+
+# Sitemaps
+Sitemap: https://appeallettergenerator.com/sitemap.xml
+Sitemap: https://appeallettergenerator.com/server-sitemap.xml
