@@ -15,7 +15,10 @@ const slideVariants = {
     exit: (d: number) => ({ x: d < 0 ? 300 : -300, opacity: 0 }),
 };
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8787/api';
+//'http://localhost:8787/api'; 
+const API_BASE_URL =
+  process.env.NEXT_PUBLIC_API_URL ||
+  "https://api.appeallettergenerator.com/api";
 
 function InputField({ label, name, type = 'text', placeholder, required, value, onChange }: { label: string; name: keyof AppealRequest; type?: string; placeholder: string; required?: boolean; value: string | number; onChange: (val: string | number) => void }) {
     return (
