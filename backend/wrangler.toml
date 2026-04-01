@@ -3,13 +3,9 @@ main = "src/server.ts"
 compatibility_date = "2024-03-28"
 
 [vars]
-# These will be available as global variables or via c.env in Hono
-# You should also set these in the Cloudflare Dashboard for production
-# OPENAI_API_KEY = "your-key-here"
-# RESEND_API_KEY = "your-key-here"
 
 [[routes]]
-pattern = "api.appeallettergenerator.com/*"
+pattern = "api.appeallettergenerator.com"
 custom_domain = true
 
 [observability]
