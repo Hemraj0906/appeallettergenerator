@@ -4,6 +4,7 @@ import "./globals.css";
 import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
 import { PrivacyBanner } from "./components/PrivacyBanner";
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
@@ -99,6 +100,7 @@ export default function RootLayout({
         <main className="pt-16">{children}</main>
         <Footer />
         <PrivacyBanner />
+        <Analytics />
       </body>
     </html>
   );
