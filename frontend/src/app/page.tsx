@@ -256,9 +256,9 @@ export default function HomePage() {
             variants={fadeUp}
           >
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-              How to{" "}
+              3 Steps to{" "}
               <span className="text-gradient">
-                Appeal a Denied Insurance Claim
+                Overturn Your Claim Denial
               </span>
             </h2>
             <p className="text-slate-400 text-lg max-w-2xl mx-auto">
@@ -287,9 +287,9 @@ export default function HomePage() {
                 <div className="text-sky-400 text-sm font-mono mb-2">
                   Step {step.num}
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3">
+                <div className="text-xl font-bold text-white mb-3">
                   {step.title}
-                </h3>
+                </div>
                 <p className="text-slate-400 leading-relaxed">{step.desc}</p>
               </motion.div>
             ))}
@@ -360,9 +360,9 @@ export default function HomePage() {
                 className="glass rounded-xl p-6 hover:bg-white/10 transition-all"
               >
                 <feature.icon className="w-8 h-8 text-sky-400 mb-4" />
-                <h3 className="text-white font-semibold mb-2">
+                <div className="text-lg text-white font-semibold mb-2">
                   {feature.title}
-                </h3>
+                </div>
                 <p className="text-slate-400 text-sm">{feature.desc}</p>
               </motion.div>
             ))}
@@ -386,7 +386,7 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-left">
             <div className="glass p-6 rounded-xl">
-              <h3 className="text-white font-bold mb-3">United Kingdom</h3>
+              <div className="text-lg text-white font-bold mb-3">United Kingdom</div>
               <p className="text-slate-400 text-sm leading-relaxed">
                 Master the <strong>health insurance appeal process uk</strong>.
                 Whether it is <strong>bupa claim denied what to do</strong> or
@@ -395,7 +395,7 @@ export default function HomePage() {
               </p>
             </div>
             <div className="glass p-6 rounded-xl">
-              <h3 className="text-white font-bold mb-3">Canada</h3>
+              <div className="text-lg text-white font-bold mb-3">Canada</div>
               <p className="text-slate-400 text-sm leading-relaxed">
                 What to do if insurance denies claim canada? Our toolkit covers
                 the <strong>health claim appeal process ontario</strong> and
@@ -404,7 +404,7 @@ export default function HomePage() {
               </p>
             </div>
             <div className="glass p-6 rounded-xl">
-              <h3 className="text-white font-bold mb-3">Australia</h3>
+              <div className="text-lg text-white font-bold mb-3">Australia</div>
               <p className="text-slate-400 text-sm leading-relaxed">
                 Get a{" "}
                 <strong>free health fund appeal template australia</strong>.
@@ -414,7 +414,7 @@ export default function HomePage() {
               </p>
             </div>
             <div className="glass p-6 rounded-xl">
-              <h3 className="text-white font-bold mb-3">Resources</h3>
+              <div className="text-lg text-white font-bold mb-3">Resources</div>
               <p className="text-slate-400 text-sm leading-relaxed">
                 Access our <strong>denied claim appeal toolkit free</strong>.
                 Download a{" "}
@@ -641,7 +641,7 @@ export default function HomePage() {
                 variants={fadeUp}
                 className="glass rounded-xl p-6"
               >
-                <h3 className="text-white font-semibold mb-2">{faq.q}</h3>
+                <div className="text-lg text-white font-semibold mb-2">{faq.q}</div>
                 <p className="text-slate-400 text-sm leading-relaxed">
                   {faq.a}
                 </p>
