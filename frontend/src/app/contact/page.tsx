@@ -4,6 +4,9 @@ export const metadata: Metadata = {
   title: "Contact Us | AppealLetterGenerator.com",
   description:
     "Get in touch with the AppealLetterGenerator.com team for support, feedback, or legal inquiries.",
+  alternates: {
+    canonical: "/contact",
+  },
 };
 
 export default function ContactPage() {
@@ -35,7 +38,7 @@ export default function ContactPage() {
           <p className="text-slate-400 text-sm mb-4">
             For GDPR, data deletion, or legal questions gmail us.
           </p>
-            {/* <a
+          {/* <a
                 href="mailto:legal@appeallettergenerator.com"
                 className="text-purple-400 font-bold hover:underline"
             >
@@ -58,6 +61,29 @@ export default function ContactPage() {
       <div className="mt-16 text-slate-500 text-sm">
         <p>AppealLetterGenerator.com | Mission-Driven AI for the People</p>
       </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ContactPage",
+            name: "Contact Us - AppealLetterGenerator.com",
+            description:
+              "Get in touch with the AppealLetterGenerator.com team for support, feedback, or legal inquiries.",
+            mainEntity: {
+              "@type": "Organization",
+              name: "AppealLetterGenerator.com",
+              email: "appeallettergenerator@gmail.com",
+              contactPoint: {
+                "@type": "ContactPoint",
+                contactType: "customer service",
+                email: "appeallettergenerator@gmail.com",
+              },
+            },
+          }),
+        }}
+      />
     </div>
   );
 }

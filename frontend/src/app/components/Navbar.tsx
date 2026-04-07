@@ -15,12 +15,24 @@ export function Navbar() {
               Appeal Letter Generator
             </span>
           </Link>
-          <div className="hidden md:flex items-center gap-6 text-sm">
+          <div className="hidden lg:flex items-center gap-6 text-sm">
             <Link
               href="/generate"
               className="text-slate-300 hover:text-white transition-colors"
             >
               Generate Appeal
+            </Link>
+            <Link
+              href="/state"
+              className="text-slate-300 hover:text-white transition-colors"
+            >
+              State Laws
+            </Link>
+            <Link
+              href="/appeal"
+              className="text-slate-300 hover:text-white transition-colors"
+            >
+              Insurers
             </Link>
             <Link
               href="/blog"
@@ -32,7 +44,7 @@ export function Navbar() {
               href="/success-stories"
               className="text-slate-300 hover:text-white transition-colors"
             >
-              Success Stories
+              Success
             </Link>
           </div>
           <Link

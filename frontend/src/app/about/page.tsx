@@ -4,6 +4,9 @@ export const metadata: Metadata = {
   title: "About Us | AppealLetterGenerator.com",
   description:
     "Learn about AppealLetterGenerator.com and our mission to help consumers overturn denied insurance claims with AI-powered appeal letters.",
+  alternates: {
+    canonical: "/about",
+  },
 };
 
 export default function AboutPage() {
@@ -105,6 +108,26 @@ export default function AboutPage() {
           Get in touch with us
         </a>
       </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "AboutPage",
+            name: "About AppealLetterGenerator.com",
+            description:
+              "Learn about our mission to help consumers overturn denied insurance claims with AI-powered appeal letters.",
+            mainEntity: {
+              "@type": "Organization",
+              name: "AppealLetterGenerator.com",
+              description:
+                "Free AI-powered insurance denial appeal letter generator",
+              url: "https://appeallettergenerator.com",
+            },
+          }),
+        }}
+      />
     </div>
   );
 }

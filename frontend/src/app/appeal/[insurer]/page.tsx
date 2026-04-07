@@ -15,6 +15,9 @@ export async function generateMetadata({ params }: { params: { insurer: string }
     return {
         title: `Free Appeal for ${ins.name} Denied Claims – 2026 AI Generator`,
         description: `How to appeal a denied ${ins.name} claim for free. AI-generated appeal letter with legal citations. ${ins.successRate}% success rate. No login required.`,
+        alternates: {
+            canonical: `/appeal/${params.insurer}`,
+        },
         openGraph: { title: `Free Appeal for ${ins.name} Denied Claims`, description: `Overturn your ${ins.shortName} denial in 60 seconds with our free AI appeal generator.` },
     };
 }

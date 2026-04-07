@@ -4,6 +4,9 @@ export const metadata: Metadata = {
   title: "Terms of Service | AppealLetterGenerator.com",
   description:
     "Terms of service and legal disclaimers for using AppealLetterGenerator.com's insurance appeal letter generator.",
+  alternates: {
+    canonical: "/terms",
+  },
 };
 
 export default function TermsPage() {

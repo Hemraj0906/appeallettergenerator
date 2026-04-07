@@ -10,11 +10,11 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 export const metadata: Metadata = {
   metadataBase: new URL("https://appeallettergenerator.com"),
   title: {
-    default: "Free Insurance Appeal Letter Generator | Appeal a Denied Claim",
+    default: "Free Insurance Appeal Letter Generator - Overturn Denials",
     template: "%s | AppealLetterGenerator.com",
   },
   description:
-    "Learn how to appeal a denied insurance claim with our free insurance appeal letter generator. Get professional templates for US, UK, Canada, and Australia. 100% free appeal letter PDF and step-by-step guidance to overturn your medical or health insurance denial.",
+    "Health insurance claim denied? Use our free AI appeal letter generator. Get professional templates, state law citations, and case precedents instantly.",
   keywords: [
     "how to appeal a denied insurance claim",
     "health insurance claim denied what to do",
@@ -81,6 +81,19 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  alternates: {
+    canonical: "/",
+  },
+  icons: {
+    icon: [
+      { url: '/icon.png' },
+      { url: '/icon.png', type: 'image/png' },
+    ],
+    shortcut: ['/icon.png'],
+    apple: [
+      { url: '/icon.png' },
+    ],
+  },
   verification: { google: "your-google-verification-code" },
 };
 
@@ -91,9 +104,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={inter.variable} suppressHydrationWarning>
-      <head>
-        <link rel="canonical" href="https://appeallettergenerator.com" />
-      </head>
       <body className="min-h-screen bg-grid" suppressHydrationWarning>
         <Navbar />
         <main className="pt-16">{children}</main>

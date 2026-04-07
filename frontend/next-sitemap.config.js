@@ -5,11 +5,8 @@ module.exports = {
   sitemapSize: 7000,
   changefreq: "weekly",
   priority: 0.7,
-  exclude: ["/api/*"],
+  exclude: ["/api/*", "/icon.png"],
   robotsTxtOptions: {
-    additionalSitemaps: [
-      "https://appeallettergenerator.com/server-sitemap.xml",
-    ],
     policies: [
       { userAgent: "*", allow: "/" },
       { userAgent: "*", disallow: ["/api/", "/_next/"] },

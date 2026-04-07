@@ -32,6 +32,13 @@ const nextConfig = {
       { source: "/tool", destination: "/generate", permanent: true },
       { source: "/appeals", destination: "/generate", permanent: true },
       { source: "/appeal-letter", destination: "/generate", permanent: true },
+      // WWW to non-WWW redirect
+      {
+        source: "/:path*",
+        destination: "https://appeallettergenerator.com/:path*",
+        has: [{ type: "host", value: "www.appeallettergenerator.com" }],
+        permanent: true,
+      },
     ];
   },
   eslint: { ignoreDuringBuilds: true },

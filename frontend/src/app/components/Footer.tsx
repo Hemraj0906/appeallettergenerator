@@ -22,116 +22,46 @@ export function Footer() {
             </p>
           </div>
           <div>
-            <h3 className="text-white font-semibold mb-3">Tools</h3>
+            <h3 className="text-white font-semibold mb-3">Top Insurer Appeals</h3>
             <ul className="space-y-2 text-sm text-slate-400">
-              <li>
-                <Link
-                  href="/generate"
-                  className="hover:text-white transition-colors"
-                >
-                  Appeal Generator
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/appeal/unitedhealthcare"
-                  className="hover:text-white transition-colors"
-                >
-                  UHC Appeals
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/appeal/anthem"
-                  className="hover:text-white transition-colors"
-                >
-                  Anthem Appeals
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/appeal/aetna"
-                  className="hover:text-white transition-colors"
-                >
-                  Aetna Appeals
-                </Link>
-              </li>
+              <li><Link href="/appeal/unitedhealthcare" className="hover:text-white transition-colors">UnitedHealthcare</Link></li>
+              <li><Link href="/appeal/anthem" className="hover:text-white transition-colors">Anthem BCBS</Link></li>
+              <li><Link href="/appeal/aetna" className="hover:text-white transition-colors">Aetna</Link></li>
+              <li><Link href="/appeal/cigna" className="hover:text-white transition-colors">Cigna</Link></li>
+              <li><Link href="/appeal/bcbs" className="hover:text-white transition-colors">Blue Cross Blue Shield</Link></li>
+              <li><Link href="/appeal/humana" className="hover:text-white transition-colors">Humana</Link></li>
+              <li><Link href="/appeal/kaiser" className="hover:text-white transition-colors">Kaiser Permanente</Link></li>
+              <li><Link href="/appeal/auto-insurance" className="hover:text-white transition-colors">Auto Insurance</Link></li>
             </ul>
           </div>
           <div>
-            <h3 className="text-white font-semibold mb-3">Resources</h3>
-            <ul className="space-y-2 text-sm text-slate-400">
-              <li>
-                <Link
-                  href="/blog"
-                  className="hover:text-white transition-colors"
-                >
-                  Blog & Guides
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/state/CA"
-                  className="hover:text-white transition-colors"
-                >
-                  State Laws
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/reason/not-medically-necessary"
-                  className="hover:text-white transition-colors"
-                >
-                  Denial Reasons
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/success-stories"
-                  className="hover:text-white transition-colors"
-                >
-                  Success Stories
-                </Link>
-              </li>
+            <h3 className="text-white font-semibold mb-3">State Law Guides</h3>
+            <ul className="grid grid-cols-2 gap-x-4 gap-y-2 text-sm text-slate-400">
+              <li><Link href="/state/CA" className="hover:text-white transition-colors">California</Link></li>
+              <li><Link href="/state/NY" className="hover:text-white transition-colors">New York</Link></li>
+              <li><Link href="/state/TX" className="hover:text-white transition-colors">Texas</Link></li>
+              <li><Link href="/state/FL" className="hover:text-white transition-colors">Florida</Link></li>
+              <li><Link href="/state/IL" className="hover:text-white transition-colors">Illinois</Link></li>
+              <li><Link href="/state/PA" className="hover:text-white transition-colors">Pennsylvania</Link></li>
+              <li><Link href="/state/OH" className="hover:text-white transition-colors">Ohio</Link></li>
+              <li><Link href="/state/GA" className="hover:text-white transition-colors">Georgia</Link></li>
+              <li><Link href="/state/NC" className="hover:text-white transition-colors">North Carolina</Link></li>
+              <li><Link href="/state/MI" className="hover:text-white transition-colors">Michigan</Link></li>
+              <li><Link href="/state/NJ" className="hover:text-white transition-colors">New Jersey</Link></li>
+              <li><Link href="/state/VA" className="hover:text-white transition-colors">Virginia</Link></li>
             </ul>
           </div>
           <div>
-            <h3 className="text-white font-semibold mb-3">Legal & Company</h3>
+            <h3 className="text-white font-semibold mb-3">Resources & Support</h3>
             <ul className="space-y-2 text-sm text-slate-400">
-              <li>
-                <Link
-                  href="/about"
-                  className="hover:text-white transition-colors"
-                >
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/contact"
-                  className="hover:text-white transition-colors"
-                >
-                  Contact Us
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/privacy"
-                  className="hover:text-white transition-colors"
-                >
-                  Privacy Policy
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/terms"
-                  className="hover:text-white transition-colors"
-                >
-                  Terms of Service
-                </Link>
-              </li>
+              <li><Link href="/blog" className="hover:text-white transition-colors">All Blog Articles</Link></li>
+              <li><Link href="/success-stories" className="hover:text-white transition-colors">Success Stories</Link></li>
+              <li><Link href="/about" className="hover:text-white transition-colors">About the Tool</Link></li>
+              <li><Link href="/contact" className="hover:text-white transition-colors">Contact Support</Link></li>
+              <li><Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link></li>
+              <li><Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link></li>
               <li className="text-xs text-slate-500 mt-4">
-                Not affiliated with any insurance company. Not legal advice.
+                Not affiliated with any insurance company. Not medical or legal advice. Verified for 2026 guidelines.
               </li>
             </ul>
           </div>

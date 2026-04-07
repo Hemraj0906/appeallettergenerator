@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "Success Stories – Real People Who Overturned Insurance Denials",
   description:
     "Real success stories from people who used AppealLetterGenerator.com to overturn denied insurance claims. See how they saved thousands.",
+  alternates: {
+    canonical: "/success-stories",
+  },
 };
 
 const stories = [

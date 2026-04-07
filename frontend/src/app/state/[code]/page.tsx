@@ -14,6 +14,9 @@ export async function generateMetadata({ params }: { params: { code: string } })
     return {
         title: `Free Appeal for Denied Claims in ${law.name} – 2026 Insurance Law Guide`,
         description: `${law.name} insurance appeal laws and rights. File a free appeal under ${law.statuteCitation}. AI-generated appeal letter with ${law.name} law citations.`,
+        alternates: {
+            canonical: `/state/${params.code}`,
+        },
     };
 }
 

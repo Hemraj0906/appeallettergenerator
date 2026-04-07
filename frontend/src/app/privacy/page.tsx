@@ -4,6 +4,9 @@ export const metadata: Metadata = {
   title: "Privacy Policy – AppealLetterGenerator.com",
   description:
     "Privacy policy for AppealLetterGenerator.com. We delete all data within 24 hours. No login required. No data sold.",
+  alternates: {
+    canonical: "/privacy",
+  },
 };
 
 export default function PrivacyPage() {
@@ -114,6 +117,24 @@ export default function PrivacyPage() {
           </p>
         </section>
       </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            name: "Privacy Policy - AppealLetterGenerator.com",
+            description:
+              "Privacy policy for AppealLetterGenerator.com. We delete all data within 24 hours. No login required. No data sold.",
+            mainEntity: {
+              "@type": "Organization",
+              name: "AppealLetterGenerator.com",
+              privacyPolicy: "https://appeallettergenerator.com/privacy",
+            },
+          }),
+        }}
+      />
     </div>
   );
 }

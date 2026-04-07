@@ -153,14 +153,16 @@ export default function HomePage() {
 
           <motion.h1
             variants={fadeUp}
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-6"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-4 text-gradient"
           >
-            <span className="text-gradient">
-              How to Appeal a Denied Insurance Claim
-            </span>
-            <br />
-            Free AI Appeal Letter Generator
+            Free AI Insurance Appeal Letter Generator
           </motion.h1>
+          <motion.h2
+            variants={fadeUp}
+            className="text-2xl sm:text-3xl text-white font-bold mb-6"
+          >
+            How to Appeal a Denied Insurance Claim
+          </motion.h2>
 
           <motion.p
             variants={fadeUp}
@@ -425,6 +427,104 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* State Law Guides */}
+      <section className="py-20 px-4 bg-slate-900/50">
+        <div className="max-w-6xl mx-auto">
+          <motion.div
+            className="text-center mb-16"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeUp}
+          >
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+              State-Specific{" "}
+              <span className="text-gradient">Insurance Laws</span>
+            </h2>
+            <p className="text-slate-400 text-lg">
+              Access detailed guides for insurance appeal laws in every state,
+              plus UK, Canada, and Australia.
+            </p>
+          </motion.div>
+          <motion.div
+            className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={stagger}
+          >
+            {[
+              { code: "AL", name: "Alabama" },
+              { code: "AK", name: "Alaska" },
+              { code: "AZ", name: "Arizona" },
+              { code: "AR", name: "Arkansas" },
+              { code: "CA", name: "California" },
+              { code: "CO", name: "Colorado" },
+              { code: "CT", name: "Connecticut" },
+              { code: "DE", name: "Delaware" },
+              { code: "DC", name: "District of Columbia" },
+              { code: "FL", name: "Florida" },
+              { code: "GA", name: "Georgia" },
+              { code: "HI", name: "Hawaii" },
+              { code: "ID", name: "Idaho" },
+              { code: "IL", name: "Illinois" },
+              { code: "IN", name: "Indiana" },
+              { code: "IA", name: "Iowa" },
+              { code: "KS", name: "Kansas" },
+              { code: "KY", name: "Kentucky" },
+              { code: "LA", name: "Louisiana" },
+              { code: "ME", name: "Maine" },
+              { code: "MD", name: "Maryland" },
+              { code: "MA", name: "Massachusetts" },
+              { code: "MI", name: "Michigan" },
+              { code: "MN", name: "Minnesota" },
+              { code: "MS", name: "Mississippi" },
+              { code: "MO", name: "Missouri" },
+              { code: "MT", name: "Montana" },
+              { code: "NE", name: "Nebraska" },
+              { code: "NV", name: "Nevada" },
+              { code: "NH", name: "New Hampshire" },
+              { code: "NJ", name: "New Jersey" },
+              { code: "NM", name: "New Mexico" },
+              { code: "NY", name: "New York" },
+              { code: "NC", name: "North Carolina" },
+              { code: "ND", name: "North Dakota" },
+              { code: "OH", name: "Ohio" },
+              { code: "OK", name: "Oklahoma" },
+              { code: "OR", name: "Oregon" },
+              { code: "PA", name: "Pennsylvania" },
+              { code: "RI", name: "Rhode Island" },
+              { code: "SC", name: "South Carolina" },
+              { code: "SD", name: "South Dakota" },
+              { code: "TN", name: "Tennessee" },
+              { code: "TX", name: "Texas" },
+              { code: "UT", name: "Utah" },
+              { code: "VT", name: "Vermont" },
+              { code: "VA", name: "Virginia" },
+              { code: "WA", name: "Washington" },
+              { code: "WV", name: "West Virginia" },
+              { code: "WI", name: "Wisconsin" },
+              { code: "WY", name: "Wyoming" },
+              { code: "AU", name: "Australia" },
+              { code: "CA-BC", name: "Canada (BC)" },
+              { code: "CA-ON", name: "Canada (ON)" },
+            ].map((state) => (
+              <motion.div key={state.code} variants={fadeUp}>
+                <Link
+                  href={`/state/${state.code}`}
+                  className="block glass rounded-xl p-4 hover:bg-white/10 transition-all text-center group"
+                >
+                  <div className="text-white font-semibold group-hover:text-sky-400 transition-colors">
+                    {state.name}
+                  </div>
+                  <div className="text-slate-500 text-sm">Appeal Laws</div>
+                </Link>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </section>
+
       {/* Social Proof */}
       <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto">
@@ -551,8 +651,26 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Final CTA */}
+      {/* SEO Content Block for Text/HTML Ratio */}
       <section className="py-20 px-4">
+        <div className="max-w-4xl mx-auto prose prose-invert prose-slate">
+          <h2 className="text-2xl font-bold text-white mb-4">
+            Understanding the Medical Insurance Appeal Process
+          </h2>
+          <p className="text-slate-300 leading-relaxed mb-4">
+            Receiving a denial letter from your health insurance provider can be a frustrating and overwhelming experience. However, it is crucial to understand that a denial is not the end of the road. In fact, a significant percentage of denied medical claims are successfully overturned upon appeal. Our free insurance appeal letter generator is designed to simplify this complex process, giving patients the tools they need to fight back against unfair denials.
+          </p>
+          <p className="text-slate-300 leading-relaxed mb-4">
+            The first step in any successful appeal is understanding the specific reason for denial. Insurance companies categorize denials into several distinct buckets, such as "not medically necessary," "pre-authorization required," "out-of-network provider," or simple administrative coding errors. By identifying the exact root cause, our AI system can automatically pull the relevant state insurance laws and clinical guidelines necessary to construct a highly targeted and legally sound counter-argument. You can read more about your federal protection rights on <a href="https://www.healthcare.gov/appeal-insurance-company-decision/appeals/" target="_blank" rel="noopener noreferrer" className="text-sky-400 hover:text-sky-300 underline">HealthCare.gov</a>.
+          </p>
+          <p className="text-slate-300 leading-relaxed">
+            Furthermore, state and federal laws—including the Affordable Care Act (ACA)—grant you the legally protected right to both an internal appeal and an external review by an independent third party. Writing a formal appeal letter that cites these statutory rights, references prior case law precedents, and clearly outlines clinical necessity forces the insurance adjuster to evaluate your claim under strict regulatory scrutiny. Do not let insurance bureaucracy prevent you from receiving the medical care you deserve; use our completely free tool to generate a professional appeal letter in seconds.
+          </p>
+        </div>
+      </section>
+
+      {/* Final CTA */}
+      <section className="py-20 px-4 bg-slate-900/50">
         <motion.div
           className="max-w-3xl mx-auto text-center"
           initial="hidden"
