@@ -84,16 +84,6 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
-  icons: {
-    icon: [
-      { url: '/icon.png' },
-      { url: '/icon.png', type: 'image/png' },
-    ],
-    shortcut: ['/icon.png'],
-    apple: [
-      { url: '/icon.png' },
-    ],
-  },
   verification: { google: "your-google-verification-code" },
 };
 
